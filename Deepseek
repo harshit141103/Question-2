@@ -1,0 +1,52 @@
+GIVEN DATA:
+Avogadro's number, N_A = 6.02 × 10^23 atoms/g-atom
+Density, ρ = 2.33 × 10^6 g/m^3
+Atomic weight, A = 28.1 g/mol
+Intrinsic carrier density, n_i = 1.5 × 10^16 m^-3
+Electron mobility, μ_e = 0.14 m²/V·s (assuming "N·s" is a typo and should be V·s)
+Hole mobility, μ_h = 0.05 m²/V·s
+
+---
+
+STEP 1: COMPUTE NUMBER OF SILICON ATOMS PER m³
+Number of moles per m³ = ρ / A
+Moles/m³ = (2.33 × 10^6 g/m³) / (28.1 g/mol) = 82918.86 mol/m³
+
+Number of Si atoms per m³ = Moles/m³ × N_A
+= 82918.86 × 6.02 × 10^23
+≈ 4.99 × 10^28 atoms/m³
+
+So, Silicon atom concentration ≈ 4.99 × 10^28 m⁻³.
+
+---
+
+STEP 2: RELATIVE CONCENTRATION OF Si ATOMS TO ELECTRON-HOLE PAIRS
+At intrinsic condition: n = p = n_i = 1.5 × 10^16 m⁻³
+Relative concentration (Si atoms / electron-hole pairs):
+= (4.99 × 10^28) / (1.5 × 10^16)
+≈ 3.327 × 10^12
+
+Interpretation: There is roughly one electron-hole pair for every 3.33 × 10^12 Si atoms.
+
+---
+
+STEP 3: CALCULATE INTRINSIC RESISTIVITY
+Intrinsic conductivity formula: σ_i = n_i e (μ_e + μ_h)
+e = 1.6 × 10^-19 C
+σ_i = (1.5 × 10^16) × (1.6 × 10^-19) × (0.14 + 0.05)
+= (1.5 × 10^16) × (1.6 × 10^-19) × 0.19
+
+First, 1.5 × 10^16 × 1.6 × 10^-19 = 2.4 × 10^-3
+Then multiply by 0.19: 2.4 × 10^-3 × 0.19 = 4.56 × 10^-4 S/m
+
+So σ_i ≈ 4.56 × 10^-4 S/m.
+
+Resistivity ρ_i = 1 / σ_i
+= 1 / (4.56 × 10^-4) ≈ 2192.98 Ω·m
+
+---
+
+STEP 4: FINAL ANSWERS
+1. Silicon atom concentration ≈ 4.99 × 10^28 m⁻³
+2. Relative concentration (Si atoms / charge carriers) ≈ 3.33 × 10^12
+3. Intrinsic resistivity of Si at 300 K ≈ 2193 Ω·m
