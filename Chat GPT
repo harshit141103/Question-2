@@ -1,0 +1,65 @@
+Given:
+Temperature = 300 K
+Avogadro’s number (N_A) = 6.02 × 10^23 atoms/g-atom
+Density of silicon (ρ) = 2.33 × 10^6 g/m^3
+Atomic weight of silicon = 28.1
+Intrinsic carrier concentration (n_i) = 1.5 × 10^16 m^-3
+Electron mobility (μ_n) = 0.14 m^2/V·s
+Hole mobility (μ_p) = 0.05 m^2/V·s
+Charge of electron (q) = 1.6 × 10^-19 C
+
+--------------------------------------------------
+STEP 1: Number of silicon atoms per m³
+
+Number of gram-atoms per m³
+= Density / Atomic weight
+= (2.33 × 10^6) / 28.1
+= 8.29 × 10^4 g-atoms/m³
+
+Number of silicon atoms per m³
+= (8.29 × 10^4) × (6.02 × 10^23)
+= 4.99 × 10^28 atoms/m³
+
+--------------------------------------------------
+STEP 2: Number of electron-hole pairs per m³
+
+For intrinsic semiconductor:
+Number of electrons = Number of holes = n_i
+
+Electron-hole pairs per m³
+= n_i
+= 1.5 × 10^16 pairs/m³
+
+--------------------------------------------------
+STEP 3: Relative concentration of silicon atoms
+
+Relative concentration
+= (Number of Si atoms) / (Number of electron-hole pairs)
+
+= (4.99 × 10^28) / (1.5 × 10^16)
+= 3.33 × 10^12
+
+--------------------------------------------------
+STEP 4: Conductivity of intrinsic silicon
+
+σ = q × n_i × (μ_n + μ_p)
+
+σ = (1.6 × 10^-19) × (1.5 × 10^16) × (0.14 + 0.05)
+σ = (1.6 × 10^-19) × (1.5 × 10^16) × 0.19
+σ = 4.56 × 10^-4 S/m
+
+--------------------------------------------------
+STEP 5: Intrinsic resistivity of silicon
+
+ρ = 1 / σ
+ρ = 1 / (4.56 × 10^-4)
+ρ ≈ 2193 Ω·m
+
+--------------------------------------------------
+FINAL ANSWERS:
+
+Relative concentration of silicon atoms
+= 3.33 × 10^12
+
+Intrinsic resistivity of silicon
+≈ 2.19 × 10^3 Ω·m
