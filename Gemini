@@ -1,0 +1,24 @@
+Step 1: Calculate the concentration of Silicon atoms (N)
+N = (Density * Avogadro's Number) / Atomic Weight
+N = (2.33 * 10^6 g/m^3 * 6.02 * 10^23 atoms/g-atom) / 28.1
+N = 4.99 * 10^28 atoms/m^3
+
+Step 2: Calculate the relative concentration
+Relative concentration = (Concentration of Si atoms) / (Intrinsic carrier density)
+Relative concentration = N / n_i
+Relative concentration = (4.99 * 10^28) / (1.5 * 10^16)
+Relative concentration = 3.33 * 10^12
+(This means there is 1 electron-hole pair for every 3.33 * 10^12 silicon atoms)
+
+Step 3: Calculate Intrinsic Conductivity (σ_i)
+The charge of an electron (e) is 1.6 * 10^-19 C.
+σ_i = n_i * e * (μ_e + μ_h)
+σ_i = (1.5 * 10^16) * (1.6 * 10^-19) * (0.14 + 0.05)
+σ_i = (2.4 * 10^-3) * (0.19)
+σ_i = 4.56 * 10^-4 S/m (or Ω^-1·m^-1)
+
+Step 4: Calculate Intrinsic Resistivity (ρ_i)
+Resistivity is the reciprocal of conductivity.
+ρ_i = 1 / σ_i
+ρ_i = 1 / (4.56 * 10^-4)
+ρ_i = 2192.98 Ω-m
